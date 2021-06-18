@@ -33,7 +33,9 @@
   border-radius: 4px;
 
   transition: border-color 250ms var(--timing-func);
-  &:focus {
+
+  &:focus,
+  &:hover {
     outline: none;
     border-color: var(--accent-color);
   }
@@ -48,6 +50,7 @@
 
   transition: fill 250ms var(--timing-func);
 
+  .call-back__input:hover + &,
   .call-back__input:focus + & {
     fill: var(--accent-color);
   }
@@ -76,7 +79,10 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  &:focus {
+  transition: border-color 250ms var(--timing-func);
+
+  &:focus,
+  &:hover {
     outline: none;
     border-color: var(--accent-color);
   }
@@ -95,9 +101,16 @@
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
 
+  transition: border 250ms var(--timing-func), border 250ms var(--timing-func),
+    border-color 250ms var(--timing-func);
+
   .call-back__checkbox:checked + & {
     border: 1px solid transparent;
     background-color: var(--accent-color);
+  }
+  .call-back__checkbox:hover + &,
+  .call-back__checkbox:focus + & {
+    border-color: var(--accent-color);
   }
 }
 .call-back__link {
