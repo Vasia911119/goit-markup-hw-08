@@ -1,0 +1,47 @@
+/* -- CONTACTS -- */
+.contacts__link {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms var(--timing-func);
+  &--grey {
+    color: var(--contacts-footer-text-color);
+  }
+  &--height {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.contacts__icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+
+  transition: fill 250ms var(--timing-func);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.contacts__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &--position:first-child {
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
+  &--position:last-child {
+    margin-left: 0;
+  }
+}
+/* -- ‡ CONTACTS -- */

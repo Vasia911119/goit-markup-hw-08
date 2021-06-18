@@ -1,0 +1,41 @@
+/* -- FOOTER -- */
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-background-color);
+}
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.page-footer__contacts {
+  margin-right: 85px;
+}
+.page-footer__logo--position {
+  margin-bottom: 20px;
+}
+.page-footer__address {
+  margin-bottom: 9px;
+
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+}
+.page-footer__social-contacts {
+  margin-right: auto;
+}
+.page-footer__welcome-text {
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* -- ‡ FOOTER -- */
