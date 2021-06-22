@@ -14,7 +14,7 @@
 }
 .backdrop__modal {
   position: relative;
-  width: 528px;
+  width: 450px;
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, 0) scale(1) rotate3d(0, 0, 0, 360deg);
@@ -25,6 +25,10 @@
   border-radius: 4px;
 
   transition: transform 250ms var(--timing-func);
+
+  @media screen and (min-width: $desktop-size) {
+    width: 528px;
+  }
 
   .backdrop.is-hidden & {
     transform: translate3d(-50%, -50%, 0) scale(0.8) rotate3d(0, -10, 0, 0deg);

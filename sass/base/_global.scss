@@ -45,7 +45,13 @@ svg {
   text-decoration: none;
 }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: $tablet-size) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: $desktop-size) {
+    padding: 94px 0;
+  }
 }
 .section__title {
   margin-bottom: 50px;
@@ -58,9 +64,16 @@ svg {
   text-align: center;
 }
 .container {
-  width: 1200px;
+  max-width: $mobile-size;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet-size) {
+    max-width: $tablet-size;
+  }
+  @media screen and (min-width: $desktop-size) {
+    max-width: $desktop-size;
+  }
 }
 .visually-hidden {
   position: absolute;

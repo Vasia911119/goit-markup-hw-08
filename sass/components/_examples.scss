@@ -2,6 +2,9 @@
 .examples-section {
   padding-top: 0;
   padding-bottom: 0;
+  @media screen and (max-width: ($desktop-size)-1) {
+    display: none;
+  }
 }
 .examples-section__list {
   display: flex;

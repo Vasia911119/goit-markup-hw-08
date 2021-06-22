@@ -1,8 +1,8 @@
 /* -- SOCIAL CONTACTS -- */
 .social-contacts {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  // flex-wrap: wrap;
 }
 .social-contacts__item--position:not(:last-child) {
   margin-right: 10px;

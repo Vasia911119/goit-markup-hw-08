@@ -1,8 +1,8 @@
-@import 'base/normalize';
-@import 'base/global';
+@import 'vendors/normalize';
 @import 'utils/variables';
+@import 'base/global';
 @import 'components/logo';
-@import 'components/header';
+@import 'layout/header';
 @import 'components/navigation';
 @import 'components/hero';
 @import 'components/features';
@@ -10,9 +10,10 @@
 @import 'components/team';
 @import 'components/social-contacts';
 @import 'components/clients';
-@import 'components/portfolio';
+@import 'layout/portfolio';
 @import 'components/form-footer';
-@import 'components/footer';
+@import 'layout/footer';
 @import 'components/contacts';
 @import 'components/modal-window';
 @import 'components/form-modal';
+@import 'components/mobile-menu';

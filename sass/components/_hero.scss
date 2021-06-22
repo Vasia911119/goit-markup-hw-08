@@ -1,8 +1,8 @@
 /* -- HERO -- */
 .hero-section {
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
 
@@ -18,9 +18,14 @@
     url('../images/background.jpg');
 
   text-align: center;
+
+  @media screen and (min-width: $desktop-size) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero-section__title {
-  width: 696px;
+  width: 360px;
   margin-right: auto;
   margin-bottom: var(--card-set-gap);
   margin-left: auto;
@@ -28,10 +33,16 @@
   color: var(--secondary-text-color);
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desktop-size) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero-section__button {
   padding: 10px 32px;

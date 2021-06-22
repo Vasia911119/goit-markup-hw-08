@@ -2,10 +2,19 @@
 /* -- FILTERS -- */
 .filters {
   display: flex;
+
   justify-content: center;
-  flex-wrap: wrap;
 
   margin-bottom: 50px;
+
+  @media screen and (max-width: (($tablet-size)-1px)) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $tablet-size) and (max-width: (($desktop-size)-1px)) {
+    margin-bottom: 30px;
+  }
 }
 .filters__button {
   padding: 6px 22px;
@@ -30,23 +39,34 @@
     box-shadow: var(--shadow-button-accent);
   }
 }
+.filters__item:first-child {
+  @media screen and (max-width: (($tablet-size)-1px)) {
+    margin-bottom: 15px;
+  }
+}
 .filters__item:not(:last-child) {
   margin-right: 8px;
 }
 /* -- ‡ FILTERS -- */
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  @media screen and (min-width: $tablet-size) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
 }
 .portfolio__item {
-  flex-basis: calc((100% - (3 * var(--card-set-gap))) / 3);
-  overflow: hidden;
-
   margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  @media screen and (min-width: $tablet-size) {
+    margin-left: var(--card-set-gap);
+    flex-basis: calc((100% - (2 * var(--card-set-gap))) / 2);
+  }
+  @media screen and (min-width: $desktop-size) {
+    flex-basis: calc((100% - (3 * var(--card-set-gap))) / 3);
+  }
+
+  overflow: hidden;
 
   transition: box-shadow 250ms var(--timing-func);
   &:hover,
