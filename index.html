@@ -100,12 +100,38 @@
                 <div class="container">
                     <h2 class="section__title">Чем мы занимаемся</h2>
                     <ul class="examples-section__list list">
-                        <li class="examples-section__item"><img src="./images/box-1.jpg" alt="coding" width="370" height="294">
-                            <p class="examples-section__description">Десктопные приложения</p></li>
-                        <li class="examples-section__item"><img src="./images/box-2.jpg" alt="mobile optimization" width="370" height="294">
-                            <p class="examples-section__description">Мобильные приложения</p></li>
-                        <li class="examples-section__item"><img src="./images/box-3.jpg" alt="design" width="370" height="294">
-                            <p class="examples-section__description">Дизайнерские решения</p></li>
+                        <li class="examples-section__item">
+                            <picture>
+                                <source srcset="./images/desktop/works/webp/box-1.webp 1x, ./images/desktop/works/webp/box-1@2x.webp 2x, ./images/desktop/works/webp/box-1@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/desktop/works/box-1.jpg 1x, ./images/desktop/works/box-1@2x.jpg 2x, ./images/desktop/works/box-1@3x.jpg 3x" media="(min-width: 1200px)">
+                                <img src="./images/desktop/works/box-1.jpg" alt="coding" width="370">
+                            </picture>
+                            <p class="examples-section__description">Десктопные приложения</p>
+                        </li>
+                        <li class="examples-section__item">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/works/webp/box-2.webp 1x, ./images/desktop/works/webp/box-2@2x.webp 2x, ./images/desktop/works/webp/box-2@3x.webp 3x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/works/box-2.jpg 1x, ./images/desktop/works/box-2@2x.jpg 2x, ./images/desktop/works/box-2@3x.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <img src="./images/desktop/works/box-2.jpg" alt="mobile optimization" width="370">
+                            </picture>
+                            <p class="examples-section__description">Мобильные приложения</p>
+                        </li>
+                        <li class="examples-section__item">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/works/webp/box-3.webp 1x, ./images/desktop/works/webp/box-3@2x.webp 2x, ./images/desktop/works/webp/box-3@3x.webp 3x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/works/box-3.jpg 1x, ./images/desktop/works/box-3@2x.jpg 2x, ./images/desktop/works/box-3@3x.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <img src="./images/desktop/works/box-3.jpg" alt="design" width="370">
+                            </picture>
+                            <p class="examples-section__description">Дизайнерские решения</p>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -116,7 +142,27 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="team-section__list list">
                         <li class="team-section__item">
-                            <img src="./images/img-team-member-1.jpg" alt="brown-haired man with glasses" width="270" height="260">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/webp/team-member-1.webp 1x, ./images/desktop/team/webp/team-member-1@2x.webp 2x, ./images/desktop/team/webp/team-member-1@3x.webp 3x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/team-member-1.jpg 1x, ./images/desktop/team/team-member-1@2x.jpg 2x, ./images/desktop/team/team-member-1@3x.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/webp/team-member-1.webp 1x, ./images/tablet/team/webp/team-member-1@2x.webp 2x, ./images/tablet/team/webp/team-member-1@3x.webp 3x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/team-member-1.jpg 1x, ./images/tablet/team/team-member-1@2x.jpg 2x, ./images/tablet/team/team-member-1@3x.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/webp/team-member-1.webp 1x, ./images/mobile/team/webp/team-member-1@2x.webp 2x, ./images/mobile/team/webp/team-member-1@3x.webp 3x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/team-member-1.jpg 1x, ./images/mobile/team/team-member-1@2x.jpg 2x, ./images/mobile/team/team-member-1@3x.jpg 3x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/mobile/team/team-member-1.jpg" alt="brown-haired man with glasses">
+                            </picture>
                             <div class="team-section__info">
                                 <h3 class="team-section__title">Игорь Демьяненко</h3>
                                 <p lang="en" class="team-section__profession">Product Designer</p>
@@ -153,7 +199,27 @@
                             </div>
                         </li>
                         <li class="team-section__item">
-                            <img src="./images/img-team-member-2.jpg" alt="blonde woman with glasses" width="270" height="260">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/webp/team-member-2.webp 1x, ./images/desktop/team/webp/team-member-2@2x.webp 2x, ./images/desktop/team/webp/team-member-2@3x.webp 3x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/team-member-2.jpg 1x, ./images/desktop/team/team-member-2@2x.jpg 2x, ./images/desktop/team/team-member-2@3x.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/webp/team-member-2.webp 1x, ./images/tablet/team/webp/team-member-2@2x.webp 2x, ./images/tablet/team/webp/team-member-2@3x.webp 3x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/team-member-2.jpg 1x, ./images/tablet/team/team-member-2@2x.jpg 2x, ./images/tablet/team/team-member-2@3x.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/webp/team-member-2.webp 1x, ./images/mobile/team/webp/team-member-2@2x.webp 2x, ./images/mobile/team/webp/team-member-2@3x.webp 3x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/team-member-2.jpg 1x, ./images/mobile/team/team-member-2@2x.jpg 2x, ./images/mobile/team/team-member-2@3x.jpg 3x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/mobile/team/team-member-2.jpg" alt="blonde woman with glasses">
+                            </picture>
                             <div class="team-section__info">
                                 <h3 class="team-section__title">Ольга Репина</h3>
                                 <p lang="en" class="team-section__profession">Frontend Developer</p>
@@ -190,7 +256,27 @@
                             </div>
                         </li>
                         <li class="team-section__item">
-                            <img src="./images/img-team-member-3.jpg" alt="brunette man" width="270" height="260">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/webp/team-member-3.webp 1x, ./images/desktop/team/webp/team-member-3@2x.webp 2x, ./images/desktop/team/webp/team-member-3@3x.webp 3x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/team-member-3.jpg 1x, ./images/desktop/team/team-member-3@2x.jpg 2x, ./images/desktop/team/team-member-3@3x.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/webp/team-member-3.webp 1x, ./images/tablet/team/webp/team-member-3@2x.webp 2x, ./images/tablet/team/webp/team-member-3@3x.webp 3x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/team-member-3.jpg 1x, ./images/tablet/team/team-member-3@2x.jpg 2x, ./images/tablet/team/team-member-3@3x.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/webp/team-member-3.webp 1x, ./images/mobile/team/webp/team-member-3@2x.webp 2x, ./images/mobile/team/webp/team-member-3@3x.webp 3x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/team-member-3.jpg 1x, ./images/mobile/team/team-member-3@2x.jpg 2x, ./images/mobile/team/team-member-3@3x.jpg 3x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/mobile/team/team-member-3.jpg" alt="brunette man">
+                            </picture>
                             <div class="team-section__info">
                                 <h3 class="team-section__title">Николай Тарасов</h3>
                                 <p lang="en" class="team-section__profession">Marketing</p>
@@ -227,7 +313,27 @@
                             </div>
                         </li>
                         <li class="team-section__item">
-                            <img src="./images/img-team-member-4.jpg" alt="brunette man with glasses" width="270" height="260">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/webp/team-member-4.webp 1x, ./images/desktop/team/webp/team-member-4@2x.webp 2x, ./images/desktop/team/webp/team-member-4@3x.webp 3x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/team-member-4.jpg 1x, ./images/desktop/team/team-member-4@2x.jpg 2x, ./images/desktop/team/team-member-4@3x.jpg 3x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/webp/team-member-4.webp 1x, ./images/tablet/team/webp/team-member-4@2x.webp 2x, ./images/tablet/team/webp/team-member-4@3x.webp 3x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/team-member-4.jpg 1x, ./images/tablet/team/team-member-4@2x.jpg 2x, ./images/tablet/team/team-member-4@3x.jpg 3x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/webp/team-member-4.webp 1x, ./images/mobile/team/webp/team-member-4@2x.webp 2x, ./images/mobile/team/webp/team-member-4@3x.webp 3x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/team-member-4.jpg 1x, ./images/mobile/team/team-member-4@2x.jpg 2x, ./images/mobile/team/team-member-4@3x.jpg 3x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/mobile/team/team-member-4.jpg" alt="brunette man with glasses">
+                            </picture>
                             <div class="team-section__info">
                                 <h3 class="team-section__title">Михаил Ермаков</h3>
                                 <p lang="en" class="team-section__profession">UI Designer</p>

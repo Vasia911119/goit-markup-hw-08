@@ -74,6 +74,11 @@
     box-shadow: var(--shadow-portfolio-item);
   }
 }
+.portfolio__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .portfolio__about-client {
   position: absolute;
   top: 0;
@@ -103,6 +108,7 @@
   overflow: hidden;
 }
 .portfolio__description {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border: 1px solid var(--portfolio-description-border);
