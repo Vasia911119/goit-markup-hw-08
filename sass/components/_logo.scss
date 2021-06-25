@@ -9,6 +9,9 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
+  @media screen and (max-width: (($tablet-size)-1px)) {
+    padding: 16px 0;
+  }
   @media screen and (min-width: $desktop-size) {
     font-size: 26px;
     line-height: 1.19;

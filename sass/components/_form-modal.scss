@@ -88,17 +88,21 @@
   }
 }
 .call-back__checkbox-field {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+
   @media screen and (max-width: (($desktop-size)-1px)) {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
   }
-
-  justify-content: center;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  align-items: center;
+  @media screen and(max-width: ((($mobile-size)-1px))) {
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
 }
 .call-back__checkbox-icon {
   width: 16px;
