@@ -10,7 +10,7 @@
   @media screen and (max-width: (($tablet-size)-1px)) {
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   @media screen and (min-width: $tablet-size) and (max-width: (($desktop-size)-1px)) {
     margin-bottom: 30px;
@@ -39,14 +39,13 @@
     box-shadow: var(--shadow-button-accent);
   }
 }
-.filters__item:first-child {
-  @media screen and (max-width: (($tablet-size)-1px)) {
-    margin-bottom: 15px;
+.filters__item {
+  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
   }
 }
-.filters__item:not(:last-child) {
-  margin-right: 8px;
-}
+
 /* -- ‡ FILTERS -- */
 .portfolio {
   @media screen and (min-width: $tablet-size) {
