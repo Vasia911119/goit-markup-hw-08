@@ -1697,7 +1697,7 @@ svg {
   .call-back__checkbox-field {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
   }
