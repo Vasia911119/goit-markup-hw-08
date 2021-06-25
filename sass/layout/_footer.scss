@@ -44,6 +44,13 @@
 
   font-style: normal;
 }
+.page-footer__link {
+  transition: color 250ms var(--timing-func);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 .page-footer__social-contacts {
   margin-bottom: 60px;
   @media screen and (min-width: $tablet-size) {

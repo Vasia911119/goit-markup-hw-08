@@ -5,6 +5,10 @@
   padding: 40px;
 
   text-align: center;
+
+  @media screen and(max-width: ((($mobile-size)-1px))) {
+    padding: 35px;
+  }
 }
 .call-back__title {
   margin-top: 0;
@@ -16,6 +20,12 @@
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.03em;
+
+  @media screen and(max-width: ((($mobile-size)-1px))) {
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
 }
 .call-back__label {
   margin-bottom: 4px;
@@ -38,6 +48,9 @@
   &:hover {
     outline: none;
     border-color: var(--accent-color);
+  }
+  @media screen and(max-width: ((($mobile-size)-1px))) {
+    padding: 6px 12px 6px 42px;
   }
 }
 .call-back__icon {
@@ -70,6 +83,9 @@
 
     color: var(--placeholder-text-color);
   }
+  @media screen and(max-width: ((($mobile-size)-1px))) {
+    margin-bottom: 5px;
+  }
 }
 .call-back__textarea {
   padding: 12px 16px;
@@ -85,6 +101,9 @@
   &:hover {
     outline: none;
     border-color: var(--accent-color);
+  }
+  @media screen and(max-width: ((($mobile-size)-1px))) {
+    height: 60px;
   }
 }
 .call-back__checkbox-field {
@@ -102,6 +121,8 @@
   @media screen and(max-width: ((($mobile-size)-1px))) {
     flex-wrap: wrap;
     font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }
 .call-back__checkbox-icon {

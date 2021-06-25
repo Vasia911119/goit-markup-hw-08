@@ -52,6 +52,9 @@
   &:focus {
     fill: var(--accent-color);
   }
+  // @media screen and(max-width: ((($mobile-size)-1px))) {
+  //   right: 22px;
+  // }
 }
 .backdrop__icon {
   position: absolute;
