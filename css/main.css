@@ -1772,6 +1772,7 @@ svg {
   z-index: 999;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  visibility: hidden;
   -webkit-transition: -webkit-transform 250ms var(--timing-func);
   transition: -webkit-transform 250ms var(--timing-func);
   transition: transform 250ms var(--timing-func);
@@ -1781,6 +1782,7 @@ svg {
 .mobile-menu.is-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  visibility: visible;
 }
 
 .mobile-menu__toggle {
