@@ -38,5 +38,9 @@
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-size) {
+    text-align: left;
+  }
 }
 /* -- ‡ FEATURES -- */

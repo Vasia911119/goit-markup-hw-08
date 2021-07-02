@@ -757,6 +757,12 @@ svg {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
 /* -- ‡ FEATURES -- */
 /* -- EXAMPLES OF WORKS -- */
 .examples-section {
